@@ -5,10 +5,15 @@ html, body {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+a, a:hover {
+	text-decoration: none;
+}
 header {
 	position: relative;
 	left: 0;
-	background-color: yellow;
+	background-color: #333333;
+	color: #ecf0f1;
 	margin: 0;
 	height: auto;
 	padding: 1em;
@@ -17,7 +22,7 @@ header {
 .header-logo {
 	display: inline-block;
 	padding: 0.5em 0 0.5em 0;
-	background-color: red;
+	background-color: #929393;
 	width: 5vw;
 	height: 7vh;
 }
@@ -37,16 +42,16 @@ header {
 footer {
 	height: 15vh;
 	width: 100%;
-	background-color: #BDC3C7;
+	background-color: #333333;
 	position: relative;
 	transform: translate(,-100%);
 	bottom: 0;
 	left: 0;
-	color: rgb(70,70,70);
+	color: #929393;
 }
 
 .footer-credits {
-	position: absolute;
+	/*position: absolute;
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
@@ -54,11 +59,13 @@ footer {
 	left: 5%;	
 	top: 65%;
 	height: 5vh;
-	width: 50%;
+	width: 50%;*/
+	float: left;
+	margin: 3em 0 0 2em;
 }
 
 .footer-social-media {
-	position: absolute;
+	/*position: absolute;
 	-webkit-transform: translate(-50%,-50%);
 	-moz-transform: translate(-50%,-50%);
 	-o-transform: translate(-50%,-50%);
@@ -66,7 +73,9 @@ footer {
 	left: 80%;
 	top: 65%;
 	height: auto;
-	width: auto;
+	width: auto;*/
+	float: right;
+	margin: 2em 3em 0 0;
 }
 
 .footer-social-media a {
@@ -74,9 +83,14 @@ footer {
 	font-size: 2em;
 	text-decoration: none;
 	padding: 5px 5px 5px 5px;
-	color: rgb(70,70,70);
+	color: #929393;
 }
 
 .footer-social-media a:hover {
-	color: rgb(100,100,100);
+	color: #ecf0f1;
+}
+
+.empty {
+	height: 80vh;
+	background-color: #D64541;
 }

@@ -1,6 +1,6 @@
 html, body {
   box-sizing: border-box;
-  color:  #c0b9b8;
+  color:  #333;
 }
 
 *, *:before, *:after {
@@ -70,6 +70,31 @@ a:hover {
 }
 
 
+
+/*DESCRIPTION*/
+
+.description {
+	position: relative;
+	width: 85%;
+	min-height: 100vh;
+	height: auto;
+	background-color: #FFF;
+	border-bottom: 1px solid #bdc3c7;
+	margin: 0 auto 0 auto;
+}
+
+.description-text {	
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	font-size: 1.5em;
+	height: 40%;
+	text-align: center;
+}
+
+
+
 /*FACTS*/
 
 .facts-wrapper {
@@ -126,12 +151,13 @@ a:hover {
 .facts-right {
 	float: right;
 	width: 45%;
-	height: 95vh;
+	min-height: 95vh;
+	height: auto;
 	padding: 2em 0 2em 0;
 }
 
 .did-you-know {
-	margin-top: 2em;
+	margin: 2em 0 3em 0;
 	height: 90%;
 	background-color: #e74c3c;
 	border-bottom: 0.5em solid #9D2C30;
@@ -172,6 +198,10 @@ a:hover {
 }
 
 @media (max-width: 750px) and (min-width: 601px) {
+	.description-text {
+		font-size: 1.4em;
+	}
+
 	.result-container {
 		font-size: 0.6em;
 		text-align: center;
@@ -199,6 +229,11 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+	.description-text {
+		font-size: 1.3em;
+		width: 70%;
+	}
+
 	.result-container {
 		font-size: 0.4em;
 		text-align: center;

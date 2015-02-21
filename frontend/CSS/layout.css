@@ -1,0 +1,16 @@
+header {
+	position: relative;
+	left: 0;
+	background-color: yellow;
+	margin: 0;
+	height: auto;
+}
+
+.header-logo {
+	margin: 2em 0 2em 0;
+	background-color: red;
+}
+
+footer {
+
+}

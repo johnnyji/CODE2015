@@ -73,42 +73,81 @@ a:hover {
 /*FACTS*/
 
 .facts-wrapper {
-	width: 80%;
-	min-height: 85vh;
+	width: 85%;
+	min-height: 100vh;
 	height: auto;
 	background-color: #FFF;
 	border-bottom: 1px solid #bdc3c7;
 	margin: 0 auto 0 auto;
-	padding-bottom: 5em;
 }
 
-.statistics,
-.weather {
-	display: inline-block;
-	background-color: yellow;
-	height: auto;
-	min-width: 50%;
-	margin-top: 5em;
+.facts-left {
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 95vh;
+	text-align: center;
 }
 
-.statistics-each {
+.work {
+	margin-top: 4em;
+}
+
+.work-stats {
 	margin-bottom: 1em;
-	font-size: 	1.5em;
 }
 
-.statistics-each img {
+.work-stats img {
 	display: inline-block;
-	width: 2em;
-	height: 2em;
+	width: 4em;
+	height: 4em;
 	margin-right: 1em;
 }
 
-.statistics-each p {
+.work-stats p {
 	display: inline-block;
+	font-size: 1.5em;
 }
 
 .weather {
+	margin-top: 4em;
+}
+
+.weather-stats h2 {
+	text-decoration: underline;
+	margin-bottom: 1em;
+}
+
+.weather-stats p {
 	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+
+.facts-right {
+	float: right;
+	width: 45%;
+	height: 95vh;
+	padding: 2em 0 2em 0;
+}
+
+.did-you-know {
+	margin-top: 2em;
+	height: 90%;
+	background-color: #e74c3c;
+	border-bottom: 0.5em solid #9D2C30;
+	border-top: 0.5em solid #9D2C30;
+	padding: 1em;
+	color: #fff;
+}
+
+.did-you-know h2 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.did-you-know p {
+	font-size: 1.2em;
+	margin: 0 1em 0 1em;
 }
 
 
@@ -118,4 +157,70 @@ a:hover {
 	width: 100%;
 	height: 50vh;
 	background-color: #FFF;
+}
+
+.more-info h1 {
+	text-align: center;
+	margin: 2em 0 2em 0;
+	text-transform: uppercase;
+}
+
+@media (max-width: 975px) and (min-width: 751px) {
+	.result-container {
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 750px) and (min-width: 601px) {
+	.result-container {
+		font-size: 0.6em;
+		text-align: center;
+	}
+	
+	.result-container p {
+		font-size: 4em;
+	}
+
+	.facts-left {
+		float: none;
+		margin: 0 auto 2em auto;
+		font-size: 1.1em;
+		text-align: center;
+		width: 80%;
+	}
+
+	.facts-right {
+		float: none;
+		padding: 0;
+		margin: 0 auto 0 auto;
+		font-size: 1.1em;
+		width: 80%;
+	}
+}
+
+@media (max-width: 600px) {
+	.result-container {
+		font-size: 0.4em;
+		text-align: center;
+	}
+
+	.result-container p {
+		font-size: 5em;
+	}
+
+	.facts-left {
+		float: none;
+		margin: 0 auto 0 auto;
+		font-size: 1.1em;
+		text-align: center;
+		width: 85%;
+	}
+
+	.facts-right {
+		float: none;
+		padding: 0;
+		margin: 0 auto 0 auto;
+		font-size: 1.1em;
+		width: 85%;
+	}
 }

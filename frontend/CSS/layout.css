@@ -12,16 +12,17 @@ a, a:hover {
 header {
 	position: relative;
 	left: 0;
-	background-color: #333333;
+	background-color: #e74c3c;
 	color: #ecf0f1;
 	margin: 0;
 	height: auto;
 	padding: 1em;
+	border-bottom: 0.5em solid #C0392B;
 }
 
 .header-logo {
 	display: inline-block;
-	padding: 0.5em 0 0.5em 0;
+	margin-left: 2em;
 	background-color: #929393;
 	width: 5vw;
 	height: 7vh;
@@ -92,5 +93,5 @@ footer {
 
 .empty {
 	height: 80vh;
-	background-color: #D64541;
+	background-color: #ecf0f1;
 }

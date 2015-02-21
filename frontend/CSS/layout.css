@@ -1,16 +1,82 @@
+html, body {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 header {
 	position: relative;
 	left: 0;
 	background-color: yellow;
 	margin: 0;
 	height: auto;
+	padding: 1em;
 }
 
 .header-logo {
-	margin: 2em 0 2em 0;
+	display: inline-block;
+	padding: 0.5em 0 0.5em 0;
 	background-color: red;
+	width: 5vw;
+	height: 7vh;
+}
+
+.header-question {
+	display: inline-block;
+	position: absolute;
+	margin: 0;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	left: 50%;
+	top: 50%;
 }
 
 footer {
+	height: 15vh;
+	width: 100%;
+	background-color: #BDC3C7;
+	position: relative;
+	transform: translate(,-100%);
+	bottom: 0;
+	left: 0;
+	color: rgb(70,70,70);
+}
 
+.footer-credits {
+	position: absolute;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 5%;	
+	top: 65%;
+	height: 5vh;
+	width: 50%;
+}
+
+.footer-social-media {
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	left: 80%;
+	top: 65%;
+	height: auto;
+	width: auto;
+}
+
+.footer-social-media a {
+	bottom: 0;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 5px 5px 5px 5px;
+	color: rgb(70,70,70);
+}
+
+.footer-social-media a:hover {
+	color: rgb(100,100,100);
 }

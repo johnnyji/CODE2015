@@ -86,3 +86,35 @@ footer {
 .footer-social-media a:hover {
 	color: #ecf0f1;
 }
+
+
+/*CSS MEDIA QUERIES*/
+
+@media (max-width: 730px) {
+
+	footer {
+		height: 25vh;
+	}
+
+	.footer-social-media {
+		float: none;
+		position: relative;
+		text-align: center;
+		padding-bottom: 2em;
+		margin: 2em 0 0 0;
+	}
+
+	.footer-credits {
+		float: none;
+		position: relative;
+		text-align: center;
+		padding-top: 2em;
+		margin: 0 1.5em 0 1.5em;
+	}
+}
+
+@media (max-width: 450px) {
+	footer {
+		height: 30vh;
+	}
+}

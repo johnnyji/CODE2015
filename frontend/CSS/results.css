@@ -1,0 +1,121 @@
+html, body {
+  box-sizing: border-box;
+  color:  #c0b9b8;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ecf0f1;
+	text-decoration: none;
+}
+
+.main-result-wrapper {
+	margin: 0 auto 0 auto;
+	background: url(http://100destinations.co.uk/images/Vancouver_484634587_60847326@N00.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 90vh;
+	background-color: transparent;
+	border-bottom: 1px solid #DBDBDB;
+}
+
+.result-container {
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	left: 50%;
+	top: 60%;
+	color:  #FFF;
+}
+
+.result-container p {
+	font-size: 2.5em;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+
+.result-container h1 {
+	font-size: 10em;
+	font-weight: bold;
+	letter-spacing: -1px;
+	margin-top: 0;
+}
+
+.scroll-down {
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	left: 50%;
+	bottom: 0;
+	width: auto;
+	height: auto;
+	text-align: center;
+	font-size: 2.5em;
+	color: #FFF;
+}
+
+
+/*FACTS*/
+
+.facts-wrapper {
+	width: 80%;
+	min-height: 85vh;
+	height: auto;
+	background-color: #FFF;
+	border-bottom: 1px solid #bdc3c7;
+	margin: 0 auto 0 auto;
+	padding-bottom: 5em;
+}
+
+.statistics,
+.weather {
+	display: inline-block;
+	background-color: yellow;
+	height: auto;
+	min-width: 50%;
+	margin-top: 5em;
+}
+
+.statistics-each {
+	margin-bottom: 1em;
+	font-size: 	1.5em;
+}
+
+.statistics-each img {
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	margin-right: 1em;
+}
+
+.statistics-each p {
+	display: inline-block;
+}
+
+.weather {
+	font-size: 1.5em;
+}
+
+
+/*MORE INFO*/
+
+.more-info {
+	width: 100%;
+	height: 50vh;
+	background-color: #FFF;
+}

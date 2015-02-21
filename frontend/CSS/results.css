@@ -1,6 +1,12 @@
 html, body {
   box-sizing: border-box;
   color:  #333;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2 {
+	font-style: italic;
+	font-weight: 600;
 }
 
 *, *:before, *:after {
@@ -39,6 +45,7 @@ a:hover {
 	left: 50%;
 	top: 60%;
 	color:  #FFF;
+	font-style: italic;
 }
 
 .result-container p {
@@ -49,7 +56,7 @@ a:hover {
 
 .result-container h1 {
 	font-size: 10em;
-	font-weight: bold;
+	font-weight: 700;
 	letter-spacing: -1px;
 	margin-top: 0;
 }
@@ -111,7 +118,6 @@ a:hover {
 	float: left;
 	width: 50%;
 	height: 95vh;
-	text-align: center;
 }
 
 .work {
@@ -173,7 +179,7 @@ a:hover {
 
 .did-you-know p {
 	font-size: 1.2em;
-	margin: 0 1em 0 1em;
+	margin: 0 1em 2em 1em;
 }
 
 
@@ -197,14 +203,13 @@ a:hover {
 	}
 }
 
-@media (max-width: 750px) and (min-width: 601px) {
+@media (max-width: 900px) and (min-width: 601px) {
 	.description-text {
 		font-size: 1.4em;
 	}
 
 	.result-container {
 		font-size: 0.6em;
-		text-align: center;
 	}
 	
 	.result-container p {
@@ -215,7 +220,6 @@ a:hover {
 		float: none;
 		margin: 0 auto 2em auto;
 		font-size: 1.1em;
-		text-align: center;
 		width: 80%;
 	}
 
@@ -235,8 +239,7 @@ a:hover {
 	}
 
 	.result-container {
-		font-size: 0.4em;
-		text-align: center;
+		font-size: 0.35em;
 	}
 
 	.result-container p {
@@ -246,9 +249,18 @@ a:hover {
 	.facts-left {
 		float: none;
 		margin: 0 auto 0 auto;
-		font-size: 1.1em;
-		text-align: center;
+		font-size: 1em;
 		width: 85%;
+		height: 80vh;
+		padding: 0;
+	}
+
+	.facts-left img {
+		display: none;
+	}
+
+	.weather-stats h2 {
+		font-size: 2em;
 	}
 
 	.facts-right {
@@ -257,5 +269,9 @@ a:hover {
 		margin: 0 auto 0 auto;
 		font-size: 1.1em;
 		width: 85%;
+	}
+
+	.did-you-know p {
+		font-size: 1.1em
 	}
 }

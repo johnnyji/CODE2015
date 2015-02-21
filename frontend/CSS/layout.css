@@ -6,9 +6,20 @@ html, body {
   box-sizing: inherit;
 }
 
-a, a:hover {
+a {
+	color: inherit;
 	text-decoration: none;
 }
+
+a:hover {
+	color: #ecf0f1;
+	text-decoration: none;
+}
+
+
+
+/*HEADER*/
+
 header {
 	position: relative;
 	left: 0;
@@ -25,7 +36,7 @@ header {
 	margin-left: 2em;
 	background-color: #929393;
 	width: 5vw;
-	height: 7vh;
+	height: 6vh;
 }
 
 .header-question {
@@ -40,6 +51,9 @@ header {
 	top: 50%;
 }
 
+
+/*FOOTER*/
+
 footer {
 	height: 15vh;
 	width: 100%;
@@ -52,29 +66,11 @@ footer {
 }
 
 .footer-credits {
-	/*position: absolute;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-	left: 5%;	
-	top: 65%;
-	height: 5vh;
-	width: 50%;*/
 	float: left;
 	margin: 3em 0 0 2em;
 }
 
 .footer-social-media {
-	/*position: absolute;
-	-webkit-transform: translate(-50%,-50%);
-	-moz-transform: translate(-50%,-50%);
-	-o-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
-	left: 80%;
-	top: 65%;
-	height: auto;
-	width: auto;*/
 	float: right;
 	margin: 2em 3em 0 0;
 }
@@ -89,9 +85,4 @@ footer {
 
 .footer-social-media a:hover {
 	color: #ecf0f1;
-}
-
-.empty {
-	height: 80vh;
-	background-color: #ecf0f1;
 }

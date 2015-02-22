@@ -325,7 +325,7 @@ a:hover {
 	.result-container {
 		font-size: 0.8em;
 		left: 50%;
-		top: 55%;
+		top: 50%;
 		text-align: center;
 		padding: 3em;
 	}
@@ -346,8 +346,8 @@ a:hover {
 
 	.mobile-logo {
 		display: inline-block;
-		width: 45vw;
-		height: 25vh;
+		width: 42vw;
+		height: 18vh;
 		position: absolute;
 		-webkit-transform: translateX(-50%);
 		-moz-transform: translateX(-50%);

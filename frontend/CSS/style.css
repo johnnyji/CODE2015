@@ -241,6 +241,9 @@ select {
     background-image: url(../images/logo.png);
     background-position: center center;
   }
+  .main-logo.main-logo-question h1:hover {
+    background-image: url(../images/logo.png);
+  }
   .main-btn {
     margin: 3rem 0 6rem;
   }

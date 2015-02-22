@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TemplateApp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MongoDBConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mongodb://104.42.104.167:56916</Value>
+    </Setting>
+    <Setting Name="MongoDBName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">testPlural</Value>
+    </Setting>
+    <Setting Name="SearchResultLimit" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">6</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,391 @@
+html, body {
+  box-sizing: border-box;
+  color:  #333;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2 {
+	font-style: italic;
+	font-weight: 600;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ecf0f1;
+	text-decoration: none;
+}
+
+.main-container {
+	background: -webkit-gradient(linear, left top, left bottom, from(#edf599), to(#99e5c6));
+  background: linear-gradient(#edf599, #99e5c6);
+}
+
+.main-result-wrapper {
+	margin: 0 auto 0 auto;
+	width: 100%;
+	height: 100vh;
+}
+
+.result-container {
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	font-size: 1em;
+	left: 65%;
+	top: 50%;
+	color:  #33333;
+	font-style: italic;
+	padding: 2em 2em 0 2em;
+	background-color: #126666;
+	border-radius: 18px;
+}
+
+.result-container .speech {
+	position: relative;
+	height: 5vh;
+	width: 5vw;
+	margin: 0;
+	padding: 0;
+	left: -17%;
+}
+
+.mobile-logo {
+	display: none;
+}
+
+.logo {
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	left: 30%;
+	top: 48%;
+	width: 250px;
+	height: 250px;
+}
+
+.result-container .result {
+	font-size: 5em;
+	font-weight: 700;
+	letter-spacing: -1px;
+	color: #FFF;
+	margin: 0 auto 0.2em auto;
+}
+
+.result-container p {
+	font-size: 1.3em;
+	font-weight: 600;
+	width: 80%;
+	color: #a8c62a;
+}
+
+.scroll-down {
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	left: 50%;
+	bottom: 0;
+	width: auto;
+	height: auto;
+	text-align: center;
+	font-size: 2.5em;
+	color: inherit;
+}
+
+
+
+/*DESCRIPTION*/
+
+.description {
+	position: relative;
+	width: 100%;
+	min-height: 90vh;
+	height: auto;
+	margin: 0 auto 0 auto;
+	margin-bottom: 2em;
+	overflow: hidden;
+}
+
+.description-text {	
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	left: 50%;
+	top: 20%;
+	font-size: 1.5em;
+	height: 40%;
+	text-align: center;
+}
+
+.description-background {
+	width: 1280px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+
+/*FACTS*/
+
+/*.facts-wrapper {
+	width: 85%;
+	min-height: 100vh;
+	height: auto;
+	background-color: #FFF;
+	border-bottom: 1px solid #bdc3c7;
+	margin: 0 auto 0 auto;
+}
+
+.facts-left {
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 95vh;
+}
+
+.work {
+	margin-top: 4em;
+}
+
+.work-stats {
+	margin-bottom: 1em;
+}
+
+.work-stats img {
+	display: inline-block;
+	width: 4em;
+	height: 4em;
+	margin-right: 1em;
+}
+
+.work-stats p {
+	display: inline-block;
+	font-size: 1.5em;
+}
+
+.weather {
+	margin-top: 4em;
+}
+
+.weather-stats p {
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+.weather-stats p img {
+	width: 2.5em;
+	height: 2.5em;
+	margin-right: 1em;
+}
+
+.facts-right {
+	float: right;
+	width: 45%;
+	min-height: 95vh;
+	height: auto;
+	padding: 2em 0 2em 0;
+}*/
+
+.did-you-know {
+	margin: 2em 0 3em 0;
+	height: 90%;
+	background-color: #e74c3c;
+	border-bottom: 0.5em solid #9D2C30;
+	border-top: 0.5em solid #9D2C30;
+	padding: 1em;
+	color: #fff;
+}
+
+.did-you-know h2 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.did-you-know p {
+	font-size: 1.2em;
+	margin: 0 1em 2em 1em;
+}
+
+
+/*MORE INFO*/
+
+.more-info {
+	width: 100%;
+	height: 80vh;
+	background-color: #FFF;
+	position: relative;
+}
+
+.links {
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	left: 50%;
+	top: 40%;
+	font-size: 3em;
+}
+
+.links a:hover {
+	color: #245856;
+	text-decoration: none;
+}
+
+@media (max-width: 975px) and (min-width: 751px) {
+	.result-container {
+		font-size: 0.8em;
+	}
+
+	.logo {
+		left: 30%;
+		top: 48%;
+		width: 200px;
+		height: 200px;
+	}
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+	.description-text {
+		font-size: 1.4em;
+	}
+
+	.result-container {
+		font-size: 0.8em;
+		left: 50%;
+		top: 55%;
+		text-align: center;
+		padding: 3em;
+	}
+
+	.result-container p {
+		font-size: 1.5em;
+		text-align: center;
+		margin: 0 auto 0 auto;
+	}
+
+	.speech {
+		display: none;
+	}
+
+	.logo {
+		display: inline-block;
+		width: 25vw;
+		height: 25vh;
+		position: absolute;
+		-webkit-transform: translate(-50%,-50%);
+		-moz-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translate(-50%.-50%);
+		left: 50%;
+		top: 20%;
+	}
+
+	.facts-left {
+		float: none;
+		margin: 0 auto 2em auto;
+		font-size: 1.1em;
+		width: 80%;
+	}
+
+	.facts-right {
+		float: none;
+		padding: 0;
+		margin: 0 auto 0 auto;
+		font-size: 1.1em;
+		width: 80%;
+	}
+}
+
+@media (max-width: 600px) {
+	.description-text {
+		font-size: 1.3em;
+		width: 70%;
+	}
+
+	.result-container {
+		font-size: 0.8em;
+		left: 50%;
+		top: 50%;
+		text-align: center;
+		padding: 3em;
+	}
+
+	.result-container p {
+		font-size: 1.5em;
+		text-align: center;
+		margin: 0 auto 0 auto;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.speech {
+		display: none;
+	}
+
+	.mobile-logo {
+		display: inline-block;
+		width: 42vw;
+		height: 18vh;
+		position: absolute;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
+		left: 50%;
+	}
+
+	.facts-left {
+		float: none;
+		margin: 0 auto 0 auto;
+		font-size: 1em;
+		width: 85%;
+		height: 80vh;
+		padding: 0;
+	}
+
+	.work img {
+		display: none;
+	}
+
+	.weather-stats h2 {
+		font-size: 2em;
+	}
+
+	.facts-right {
+		float: none;
+		padding: 0;
+		margin: 0 auto 0 auto;
+		font-size: 1.1em;
+		width: 85%;
+	}
+
+	.did-you-know p {
+		font-size: 1.1em
+	}
+
+	.links {
+		font-size: 2em;
+	}
+}

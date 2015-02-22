@@ -1,0 +1,289 @@
+/*------------------------
+  Base settings
+------------------------*/
+
+html {
+  box-sizing: border-box;
+  font-size: 12px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#edf599), to(#99e5c6));
+  background: linear-gradient(#edf599, #99e5c6);
+  color: #c0b9b8;
+  font-family: 'Open Sans', sans-serif;
+}
+main {
+  display: table;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 5%;
+  background: url(../Images/bg.png) repeat-x bottom center;
+  background-size: 180vh;
+}
+figure {
+  margin-top: 0;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+button {
+  border: none;
+}
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: none transparent;
+  vertical-align: middle;
+  font-size: inherit;
+  color: inherit;
+  box-sizing: content-box;
+}
+
+/*------------------------
+  Layout
+------------------------*/
+
+.container {
+  display: table-cell;
+  width: 90%;
+  vertical-align: middle;
+}
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+/*------------------------
+  Main Area
+------------------------*/
+
+.main-section {
+  text-align: center;
+}
+.main-section.main-section-question {
+  vertical-align: top;
+}
+.main-logo h1 {
+  width: 17rem;
+  height: 17rem;
+  margin: 5rem auto;
+  text-indent: -9999px;
+  background: url(../images/logo.png) no-repeat center center;
+  background-size: contain;
+}
+.main-logo.main-logo-question h1 {
+  width: 12rem;
+  height: 12rem;
+  background: url(../images/mobile-logo.png) no-repeat center top;
+  background-size: contain;
+  margin: 0 auto;
+}
+.main-btn {
+  margin: 0 0 15rem;
+}
+.main-btn a {
+  display: block;
+  width: 11rem;
+  height: 5rem;
+  margin: 0 auto;
+  background: url(../images/btn-start.png) no-repeat center center;
+  background-size: contain;
+  text-indent: -9999px;
+}
+.main-btn a:hover,
+.main-btn a:focus {
+  background-image: url(../images/btn-start-hover.png);
+}
+.main-question-text {
+  color: #006968;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: 0;
+}
+.main-question-list {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.main-question-list li + li {
+  margin-top: 1rem;
+}
+.main-question-list a {
+  display: block;
+  padding: 0.3em;
+  background: #fff;
+  color: #006968;
+  font-size: 1.5rem;
+  font-style: italic;
+  opacity: 0.3;
+}
+.main-question-list a:hover,
+.main-question-list a:focus {
+  color: #449955;
+  opacity: 0.8;
+}
+.main-question-select {
+  margin-top: 5rem;
+}
+.main-question-select-list {
+  position: relative;
+  overflow: hidden;
+}
+.main-question-select-list select {
+  width: 130%;
+  background-color: #fff;
+  padding: 0.3em 1em;
+}
+.main-question-select-list:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 1em;
+  width: 1.8em;
+  display: block;
+  content: "";
+  background: url(../images/select.png) center no-repeat;
+  pointer-events: none;
+}
+.main-pagination {
+  position: relative;
+  margin-top: 2rem;
+}
+.main-pagination > a {
+  position: absolute;
+  top: -0.3em;
+  padding: 0 0.5em;
+  background-color: #9cce00;
+  color: #fff !important;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.main-pagination > a:hover,
+.main-pagination > a:focus {
+  background-color: #A5DA00;
+}
+.main-pagination-prev {
+  left: 0;
+}
+.main-pagination-next {
+  right: 0;
+}
+.main-pagination-list li {
+  display: inline-block;
+}
+.main-pagination-list li + li {
+  margin-left: 0.5rem;
+}
+.main-pagination-list a {
+  display: block;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.8;
+}
+.main-pagination-list a:hover,
+.main-pagination-list a:focus {
+  background: #f04242;
+}
+.main-pagination-list a.active {
+  background: #f04242;
+}
+
+/*------------------------
+  Media Queries
+------------------------*/
+
+@media screen and (min-width: 46.8em) {
+  html {
+    font-size: 17px;
+  }
+  figure {
+    margin: 0;
+  }
+  main {
+    padding: 0 10%;
+  }
+  .main-section.main-section-question {
+    vertical-align: middle
+  }
+  .main-logo h1 {
+    width: 16rem;
+    height: 16rem;
+    margin: 0 auto;
+  }
+  .main-logo.main-logo-question {
+    float: left;
+    margin-top: -7rem;
+  }
+  .main-logo.main-logo-question h1 {
+    background-image: url(../images/logo.png);
+    background-position: center center;
+  }
+  .main-btn {
+    margin: 3rem 0 6rem;
+  }
+  .main-btn a {
+    width: 8rem;
+    height: 4rem;
+  }
+  .main-question {
+    float: right;
+    width: 50%;
+    margin-top: -7rem;
+  }
+  .main-logo-question.main-logo-select {
+    margin-top: -8rem;
+  }
+  .main-question-select {
+    margin-top: -5rem;
+  }
+  .main-question-text {
+    font-size: 1rem;
+  }
+  .main-question-list {
+    margin: 0;
+  }
+  .main-question-list a {
+    font-size: 1.2rem;
+  }
+  .main-question-list li + li {
+    margin-top: 0.5rem;
+  }
+  .main-pagination > a {
+    top: 0;
+    font-size: 1rem;
+    padding: 0.3em 0.7em;
+  }
+  .main-pagination {
+    margin-top: 1.5rem;
+  }
+  .main-pagination-list a {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 70em) {
+  main {
+    padding: 0 25%;
+  }
+}

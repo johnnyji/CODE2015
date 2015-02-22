@@ -1,0 +1,126 @@
+html, body {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ecf0f1;
+	text-decoration: none;
+}
+
+
+
+/*HEADER*/
+
+/*header {
+	position: relative;
+	left: 0;
+	background-color: #fff;
+	margin: 0;
+	height: auto;
+	padding: 1em;
+	border-bottom: 0.5em solid #C0392B;
+}
+
+.header-logo {
+	display: inline-block;
+	margin-left: 2em;
+	width: 5vw;
+	height: 6vh;
+}
+
+.header-logo img {
+	width: 70px;
+	height: 40px;
+}
+
+.header-question {
+	display: inline-block;
+	position: absolute;
+	margin: 0;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	left: 50%;
+	top: 50%;
+}*/
+
+
+/*FOOTER*/
+
+footer {
+	height: 15vh;
+	width: 100%;
+	background-color: #333333;
+	position: relative;
+	-webkit-transform: translate(,-100%);
+	-moz-transform: translate(,-100%);
+	-o-transform: translate(,-100%);
+	transform: translate(,-100%);
+	bottom: 0;
+	left: 0;
+	color: #929393;
+}
+
+.footer-credits {
+	float: left;
+	margin: 3em 0 0 2em;
+}
+
+.footer-social-media {
+	float: right;
+	margin: 2em 3em 0 0;
+}
+
+.footer-social-media a {
+	bottom: 0;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 5px 5px 5px 5px;
+	color: #929393;
+}
+
+.footer-social-media a:hover {
+	color: #ecf0f1;
+}
+
+
+/*CSS MEDIA QUERIES*/
+
+@media (max-width: 730px) {
+
+	footer {
+		height: 25vh;
+	}
+
+	.footer-social-media {
+		float: none;
+		position: relative;
+		text-align: center;
+		padding-bottom: 2em;
+		margin: 2em 0 0 0;
+	}
+
+	.footer-credits {
+		float: none;
+		position: relative;
+		text-align: center;
+		padding-top: 2em;
+		margin: 0 1.5em 0 1.5em;
+	}
+}
+
+@media (max-width: 450px) {
+	footer {
+		height: 30vh;
+	}
+}

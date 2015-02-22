@@ -23,17 +23,15 @@ a:hover {
 	text-decoration: none;
 }
 
+.main-container {
+	background: -webkit-gradient(linear, left top, left bottom, from(#edf599), to(#99e5c6));
+  background: linear-gradient(#edf599, #99e5c6);
+}
+
 .main-result-wrapper {
 	margin: 0 auto 0 auto;
-	background: url(http://100destinations.co.uk/images/Vancouver_484634587_60847326@N00.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	width: 100%;
-	height: 90vh;
-	background-color: transparent;
-	border-bottom: 1px solid #DBDBDB;
+	height: 100vh;
 }
 
 .result-container {
@@ -44,8 +42,24 @@ a:hover {
 	transform: translate(-50%,-50%);
 	left: 50%;
 	top: 60%;
-	color:  #FFF;
+	color:  #33333;
 	font-style: italic;
+}
+
+.mobile-logo {
+	display: none;
+}
+
+.logo {
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	left: 50%;
+	top: 30%;
+	width: 150px;
+	height: 130px;
 }
 
 .result-container p {
@@ -73,7 +87,7 @@ a:hover {
 	height: auto;
 	text-align: center;
 	font-size: 2.5em;
-	color: #FFF;
+	color: inherit;
 }
 
 
@@ -82,24 +96,33 @@ a:hover {
 
 .description {
 	position: relative;
-	width: 85%;
-	min-height: 100vh;
+	width: 100%;
+	min-height: 90vh;
 	height: auto;
-	background-color: #FFF;
-	border-bottom: 1px solid #bdc3c7;
 	margin: 0 auto 0 auto;
+	margin-bottom: 2em.;
 }
 
 .description-text {	
 	position: absolute;
 	-webkit-transform: translate(-50%, -50%);
 	left: 50%;
-	top: 50%;
+	top: 20%;
 	font-size: 1.5em;
 	height: 40%;
 	text-align: center;
 }
 
+.description-background {
+	width: 1360px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
 
 
 /*FACTS*/
@@ -109,6 +132,7 @@ a:hover {
 	min-height: 100vh;
 	height: auto;
 	background-color: #FFF;
+	border-top: 1px solid #bdc3c7;
 	border-bottom: 1px solid #bdc3c7;
 	margin: 0 auto 0 auto;
 }
@@ -193,19 +217,36 @@ a:hover {
 
 .more-info {
 	width: 100%;
-	height: 50vh;
+	height: 80vh;
 	background-color: #FFF;
+	position: relative;
 }
 
-.more-info h1 {
-	text-align: center;
-	margin: 2em 0 2em 0;
-	text-transform: uppercase;
+.links {
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	left: 50%;
+	top: 40%;
+	font-size: 3em;
+}
+
+.links a:hover {
+	color: #245856;
+	text-decoration: none;
 }
 
 @media (max-width: 975px) and (min-width: 751px) {
 	.result-container {
 		font-size: 0.8em;
+	}
+
+	.logo {
+		width: 130px;
+		height: 110px;
+		top: 35%;
 	}
 }
 
@@ -220,6 +261,7 @@ a:hover {
 	
 	.result-container p {
 		font-size: 4em;
+		text-align: center;
 	}
 
 	.facts-left {
@@ -236,6 +278,12 @@ a:hover {
 		font-size: 1.1em;
 		width: 80%;
 	}
+
+	.logo {
+		width: 100px;
+		height: 80px;
+		top: 30%;
+	}
 }
 
 @media (max-width: 600px) {
@@ -246,10 +294,12 @@ a:hover {
 
 	.result-container {
 		font-size: 0.35em;
+		top: 50%;
 	}
 
 	.result-container p {
 		font-size: 5em;
+		text-align: center;
 	}
 
 	.facts-left {
@@ -279,5 +329,25 @@ a:hover {
 
 	.did-you-know p {
 		font-size: 1.1em
+	}
+
+	.logo {
+		width: 75px;
+		height: 65px;
+		top: 30%;
+		display: none;
+	}
+
+	.mobile-logo {
+		display: inline-block;
+		width: 45vw;
+		height: 30vh;
+		position: absolute;
+		-webkit-transform: translateX(-50%);
+		left: 50%;
+	}
+
+	.links {
+		font-size: 2em;
 	}
 }

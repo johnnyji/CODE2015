@@ -23,8 +23,7 @@ a:hover {
 header {
 	position: relative;
 	left: 0;
-	background-color: #e74c3c;
-	color: #ecf0f1;
+	background-color: #fff;
 	margin: 0;
 	height: auto;
 	padding: 1em;
@@ -34,9 +33,13 @@ header {
 .header-logo {
 	display: inline-block;
 	margin-left: 2em;
-	background-color: #929393;
 	width: 5vw;
 	height: 6vh;
+}
+
+.header-logo img {
+	width: 70px;
+	height: 40px;
 }
 
 .header-question {

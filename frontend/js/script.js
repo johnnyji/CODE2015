@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	var scrollHeight = $(window).height(); - 50;
+
 	setTimeout(function() {
 		$(".result").addClass("animated bounceInLeft");
 		setTimeout(function() {
@@ -7,6 +9,8 @@ $(document).ready(function() {
 	}, 500);
 
 	$(window).scroll(function() {
-		$(".fa-chevron-down").fadeOut(400);
+		if (scrollHeight) {
+			$(".fa-chevron-down").fadeOut(400);
+		}
 	});
 });

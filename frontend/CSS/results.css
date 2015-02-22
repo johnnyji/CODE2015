@@ -40,10 +40,23 @@ a:hover {
 	-moz-transform: translate(-50%,-50%);
 	-o-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
-	left: 50%;
-	top: 60%;
+	font-size: 1em;
+	left: 65%;
+	top: 50%;
 	color:  #33333;
 	font-style: italic;
+	padding: 2em 2em 0 2em;
+	background-color: #126666;
+	border-radius: 18px;
+}
+
+.result-container .speech {
+	position: relative;
+	height: 5vh;
+	width: 5vw;
+	margin: 0;
+	padding: 0;
+	left: -17%;
 }
 
 .mobile-logo {
@@ -56,23 +69,27 @@ a:hover {
 	-moz-transform: translate(-50%,-50%);
 	-o-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
-	left: 50%;
-	top: 30%;
-	width: 150px;
-	height: 130px;
+	left: 30%;
+	top: 48%;
+	width: 250px;
+	height: 250px;
+}
+
+.result-container .result {
+	font-size: 5em;
+	font-weight: 700;
+	letter-spacing: -1px;
+	color: #FFF;
+	margin: 0 auto 0.2em auto;
 }
 
 .result-container p {
-	font-size: 2.5em;
-	font-weight: bold;
+	font-size: 1.3em;
+	font-weight: 600;
+	width: 80%;
 	letter-spacing: -1px;
-}
+	color: #a8c62a;
 
-.result-container h1 {
-	font-size: 10em;
-	font-weight: 700;
-	letter-spacing: -1px;
-	margin-top: 0;
 }
 
 .scroll-down {
@@ -100,12 +117,16 @@ a:hover {
 	min-height: 90vh;
 	height: auto;
 	margin: 0 auto 0 auto;
-	margin-bottom: 2em.;
+	margin-bottom: 2em;
+	overflow: hidden;
 }
 
 .description-text {	
 	position: absolute;
-	-webkit-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 	left: 50%;
 	top: 20%;
 	font-size: 1.5em;
@@ -114,7 +135,7 @@ a:hover {
 }
 
 .description-background {
-	width: 1360px;
+	width: 1280px;
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -132,7 +153,6 @@ a:hover {
 	min-height: 100vh;
 	height: auto;
 	background-color: #FFF;
-	border-top: 1px solid #bdc3c7;
 	border-bottom: 1px solid #bdc3c7;
 	margin: 0 auto 0 auto;
 }
@@ -167,11 +187,6 @@ a:hover {
 .weather {
 	margin-top: 4em;
 }
-
-/*.weather-stats h2 {
-	text-decoration: underline;
-	margin-bottom: 1em;
-}*/
 
 .weather-stats p {
 	font-size: 1.5em;
@@ -244,9 +259,10 @@ a:hover {
 	}
 
 	.logo {
-		width: 130px;
-		height: 110px;
-		top: 35%;
+		left: 30%;
+		top: 48%;
+		width: 200px;
+		height: 200px;
 	}
 }
 
@@ -256,12 +272,34 @@ a:hover {
 	}
 
 	.result-container {
-		font-size: 0.6em;
-	}
-	
-	.result-container p {
-		font-size: 4em;
+		font-size: 0.8em;
+		left: 50%;
+		top: 55%;
 		text-align: center;
+		padding: 3em;
+	}
+
+	.result-container p {
+		font-size: 1.5em;
+		text-align: center;
+		margin: 0 auto 0 auto;
+	}
+
+	.speech {
+		display: none;
+	}
+
+	.logo {
+		display: inline-block;
+		width: 25vw;
+		height: 25vh;
+		position: absolute;
+		-webkit-transform: translate(-50%,-50%);
+		-moz-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translate(-50%.-50%);
+		left: 50%;
+		top: 20%;
 	}
 
 	.facts-left {
@@ -278,12 +316,6 @@ a:hover {
 		font-size: 1.1em;
 		width: 80%;
 	}
-
-	.logo {
-		width: 100px;
-		height: 80px;
-		top: 30%;
-	}
 }
 
 @media (max-width: 600px) {
@@ -293,13 +325,37 @@ a:hover {
 	}
 
 	.result-container {
-		font-size: 0.35em;
-		top: 50%;
+		font-size: 0.8em;
+		left: 50%;
+		top: 55%;
+		text-align: center;
+		padding: 3em;
 	}
 
 	.result-container p {
-		font-size: 5em;
+		font-size: 1.5em;
 		text-align: center;
+		margin: 0 auto 0 auto;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.speech {
+		display: none;
+	}
+
+	.mobile-logo {
+		display: inline-block;
+		width: 45vw;
+		height: 25vh;
+		position: absolute;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
+		left: 50%;
 	}
 
 	.facts-left {
@@ -329,22 +385,6 @@ a:hover {
 
 	.did-you-know p {
 		font-size: 1.1em
-	}
-
-	.logo {
-		width: 75px;
-		height: 65px;
-		top: 30%;
-		display: none;
-	}
-
-	.mobile-logo {
-		display: inline-block;
-		width: 45vw;
-		height: 30vh;
-		position: absolute;
-		-webkit-transform: translateX(-50%);
-		left: 50%;
 	}
 
 	.links {

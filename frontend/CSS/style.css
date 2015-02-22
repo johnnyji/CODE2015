@@ -96,6 +96,9 @@ select {
   background-size: contain;
   margin: 0 auto;
 }
+.main-logo.main-logo-question h1:hover {
+  background-image: url(../images/mobile-logo-hover.png);
+}
 .main-btn {
   margin: 0 0 15rem;
 }

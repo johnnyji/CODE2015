@@ -6,7 +6,7 @@ This is our submission for the CODE2015 Hackathon! Users are able to input their
 
 ### Our Team:
 
-[John Vidal!](https://www.linkedin.com/in/jlvidal)
+[John Vidal](https://www.linkedin.com/in/jlvidal)
 [Johnny Ji](http://johnnyji.com/)
 [Elle Kasai](http://ellekasai.com/)
 [Mariana D’Ornellas](https://www.linkedin.com/in/mdornellas)
